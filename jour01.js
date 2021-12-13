@@ -27,4 +27,6 @@ console.log(letters)
 var age = 25
 var template = `I'm ${age} years old`
 console.log(template)
-    //consigne 9
+    // bonus
+var changed = "Bonjour"
+console.log(changed.replaceAll("o", "a"))
