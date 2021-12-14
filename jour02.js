@@ -36,8 +36,8 @@ console.log(testt >= biss);
 console.log(testt <= biss);
 console.log(testt === biss);
 console.log(testt !== biss);
-console.log((testt == biss) + "ne pas utiliser");
-console.log((testt != biss) + "ne pas utiliser");
+console.log((testt == biss) + " ne pas utiliser");
+console.log((testt != biss) + " ne pas utiliser");
 
 //consigne 6
 
@@ -111,3 +111,23 @@ switch (month) {
         console.log("Winter");
         break;
 }
+// bonus 3
+
+let roundedNumber = 12.4
+let parsedNumber = parseInt(roundedNumber)
+if (roundedNumber - parsedNumber >= 0.5) {
+    console.log(parsedNumber + 1)
+} else {
+    console.log(parsedNumber)
+}
+// partie 2 du bonus
+let stringedNumber = roundedNumber.toString()
+
+let splitNumber = stringedNumber.split("")
+
+console.log(stringedNumber.substring(0, 2))
+if (roundedNumber - parsedNumber >= 0.5) {
+    console.log(stringedNumber.substring(0, 2))
+} else {
+    console.log((parsedNumber + 1).toString())
+};
