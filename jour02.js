@@ -72,3 +72,42 @@ console.log(random)
 if (random === 6) { console.log("Yes I win !") } else { console.log("So close...") }
 
 // bonus 2
+let month = "July"
+switch (month) {
+    case month = "January":
+        console.log("Winter");
+        break;
+    case month = "Febuary":
+        console.log("Winter");
+        break;
+    case month = "March":
+        console.log("Spring");
+        break;
+    case month = "April":
+        console.log("Spring");
+        break;
+    case month = "May":
+        console.log("Spring");
+        break;
+    case month = "June":
+        console.log("Summer");
+        break;
+    case month = "July":
+        console.log("Summer");
+        break;
+    case month = "August":
+        console.log("Summer");
+        break;
+    case month = "September":
+        console.log("Fall");
+        break;
+    case month = "October":
+        console.log("Fall");
+        break;
+    case month = "November":
+        console.log("Fall");
+        break;
+    case month = "December":
+        console.log("Winter");
+        break;
+}
