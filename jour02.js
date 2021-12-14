@@ -113,7 +113,7 @@ switch (month) {
 }
 // bonus 3
 
-let roundedNumber = 12.4
+let roundedNumber = 12.3
 let parsedNumber = parseInt(roundedNumber)
 if (roundedNumber - parsedNumber >= 0.5) {
     console.log(parsedNumber + 1)
@@ -123,11 +123,10 @@ if (roundedNumber - parsedNumber >= 0.5) {
 // partie 2 du bonus
 let stringedNumber = roundedNumber.toString()
 
-let splitNumber = stringedNumber.split("")
+let index = stringedNumber.indexOf(".")
 
-console.log(stringedNumber.substring(0, 2))
-if (roundedNumber - parsedNumber >= 0.5) {
-    console.log(stringedNumber.substring(0, 2))
+if (roundedNumber - parsedNumber <= 0.5) {
+    console.log(stringedNumber.substring(0, index))
 } else {
     console.log((parsedNumber + 1).toString())
 };
