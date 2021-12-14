@@ -65,3 +65,10 @@ if (password.length > 5) { console.log("The password is secure") }
 if (limit >= score && password.length > 5) {
     console.log("Everything is good")
 } else if (limit >= score || password.length > 5) { console.log("Something is good") } else { console.log("Nothing is good") }
+
+// bonus 1
+let random = Math.floor(Math.random() * (6 - 1 + 1)) + 1
+console.log(random)
+if (random === 6) { console.log("Yes I win !") } else { console.log("So close...") }
+
+// bonus 2
