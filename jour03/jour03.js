@@ -52,20 +52,20 @@ console.log(numbers)
 
 let total = 0;
 const limit = 10;
-for (let i = 0; total <= limit; i++) {
-    console.log(total)
-    total = i
+for (let i = 0; i <= limit; i++) {
+
+    total = i + total
 
 }
-
-//consigne 6
+console.log(total)
+    //consigne 6
 
 /*- Créez une variable `sentence` valant "Hello Konexio !"
 - A l'aide d'une boucle for et sans utilisez la fonction .reverse(), faites en sorte d'afficher l'inverse de votre variable `sentence` ("! oixenoK olleH")*/
 
 let sentence = "Hello Konexio !"
-
-let index = sentence.indexOf()
-
-console.log(index)
-    // for (let o = indexof(sentence); sentence = "! oixenoK olleH"; o++) { console.log(o) }
+let reverseSentence = ""
+for (let i = sentence.length - 1; i >= 0; i--) {
+    reverseSentence = reverseSentence + sentence[i]
+}
+console.log(reverseSentence)
