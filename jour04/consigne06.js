@@ -16,4 +16,4 @@ function format(num) {
     console.log(h + ':' + m + ':' + s);
 }
 
-format(3700);
+format(3100);
