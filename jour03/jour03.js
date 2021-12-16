@@ -69,3 +69,43 @@ for (let i = sentence.length - 1; i >= 0; i--) {
     reverseSentence = reverseSentence + sentence[i]
 }
 console.log(reverseSentence)
+
+// bonus 1
+/*- Si `i` est un multiple de 3 ⇒ affichez "fizz"
+- Si `i` est un multiple de 5 ⇒ affichez "buzz"
+- Si `i` est un multiple de 3 et 5 ⇒ affichez "fizzbuzz"
+- Si `i` est un multilple de 7 ⇒ ne l'affichez pas
+- Sinon, affichez la valeur de i */
+let hundred = 100
+let goal = 1
+for (let i = 0; i <= hundred; i++) {
+
+    if (i === 0) {
+        console.log();
+    } else if (i % 3 === 0 && i % 5 === 0) {
+        console.log("fizzbuzz")
+    } else if (i % 5 === 0) {
+        console.log("buzz")
+    } else if (i % 3 === 0) {
+        console.log("fizz")
+    } else if (i % 7 === 0) {
+        console.log(null)
+    } else { console.log(i) }
+}
+
+// bonus 2
+//- Reproduisez l'exercice 5 avec une boucle while
+/* Créez une variable `total` de valeur `0` et une variable `limit` de valeur `10`
+- À l'aide d'une boucle for allant de`0` à `limit`, augmentez la valeur de `total` en lui ajoutant la valeur de `i` (i est l'index de votre boucle)
+- Affichez la valeur de `total` après votre boucle, total doit valoir 55 = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10*/
+
+let totall = 0;
+const limitt = 54;
+let i = 0
+    // let okey = 0
+while (totall <= limitt) {
+    totall = i + totall;
+    i++
+}
+console.log("bonus2",
+    totall)
