@@ -21,5 +21,5 @@ function generatePassword(num) {
         console.log(password)
     }
 }
-
+// Possibilité de return a la place d'un console log pour retourné une fonction et arreté la fonction
 generatePassword(6)

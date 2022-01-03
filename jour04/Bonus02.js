@@ -18,25 +18,59 @@ function launchDice(numberOfDice) {
     // console.log(count)
     return numberOfDice
 }
+let result1 = launchDice(9)
+let joueur1 = {
+    joueur: 1,
+    score: launchDice(3)
+}
+console.log(result1)
 
 
-function players(numberOfGame) {
-    let joueur1 = {
-        joueur: 1,
-        score: launchDice(numberOfGame)
-    };
-    let joueur2 = {
-        joueur: 2,
-        score: launchDice(numberOfGame),
-    };
-    if (joueur1["score"] < joueur2["score"]) {
-        console.log("joueur2")
-    } else if (joueur1["score"] = joueur2["score"]) {
-        console.log("égalité")
-    } else {
-        console.log("joueur1")
-    }
-};
 
 
-players(4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function players(numberOfGame) {
+//     let joueur1 = {
+//         joueur: 1,
+//         score: launchDice(numberOfGame)
+//     };
+//     let joueur2 = {
+//         joueur: 2,
+//         score: launchDice(numberOfGame),
+//     };
+//     if (joueur1["score"] < joueur2["score"]) {
+//         console.log("joueur2")
+//     } else if (joueur1["score"] = joueur2["score"]) {
+//         console.log("égalité")
+//     } else {
+//         console.log("joueur1")
+//     }
+// };
+
+
+// players(4)
