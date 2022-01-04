@@ -22,12 +22,9 @@ for (let i = 0; i < words.length; i++) {
     console.log(splited);
     for (let o = 0; o < splited.length; o++) {
         let numberO = splited[o];
-
         if (numberO === "o") {
             totalO += 1;
         }
-
     }
-
 }
 console.log(totalO)

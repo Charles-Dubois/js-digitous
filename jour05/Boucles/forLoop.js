@@ -10,8 +10,8 @@ let count = 0;
 
 for (let i = 5; i <= 10; i++) {
     count += i * i;
-    console.log(count)
-};
+}
+console.log(count);
 
 /* ### 02 - Comptons
 

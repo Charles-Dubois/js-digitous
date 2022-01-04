@@ -16,9 +16,8 @@ function chekPal(string) {
     if (checkLetters === split.length) {
         console.log("palindrome !");
     } else { console.log("Nope") }
-
 }
-chekPal("kayak");
+chekPal("racecaar");
 
 
 

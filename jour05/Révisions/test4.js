@@ -2,7 +2,6 @@
 - La fonction retourne une string avec la casse inverse : une majuscule deviendra minuscule et vice-versa
 - Appelez votre fonction avec l'argument "Hello World" et vérifiez que vous obtenez "hELLO wORLD"
 */
-
 let finalString = "",
     lower = "",
     upper = "";
@@ -20,3 +19,6 @@ function swap(string) {
     console.log(finalString)
 }
 swap("Hello World");
+// console.log("bonjour".toUpperCase(2))
+// break parsse au tour de boucle suivant
+// return arrete la fonction
