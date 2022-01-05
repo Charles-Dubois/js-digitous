@@ -11,7 +11,11 @@
 
 
 function calculate(number1, operator, number2) {
-    if ((number1 !== null || undefined) && (operator !== null || undefined) && (number2 !== null || undefined)) {
+    // guard
+    if (process.argv[2] && process.argv[3] && process.argv[4] !== undefined || null) {
+
+        // calculs
+
 
         if (operator === "+") {
             return console.log(number1 + number2)
@@ -24,7 +28,10 @@ function calculate(number1, operator, number2) {
         } else if (operator === "%") {
             return console.log(number1 % number2)
         }
-    } else { return console.log("error") }
+    }
+    // message d'erreur du guard
+    else {
+        return console.log("error")
+    }
 }
-
-calculate(5, "x", 4)
+calculate(process.argv[2], process.argv[3], process.argv[4])
