@@ -6,3 +6,7 @@
 - Exportez les deux fonctions graces aux modules, et importez les dans votre fichier précedant pour refaire marcher votre code
 - Affichez la table d'addition
 */
+
+const multiple = require("./multiple")
+
+console.log(multiple.addit(process.argv[2]))
