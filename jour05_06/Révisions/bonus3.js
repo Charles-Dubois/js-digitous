@@ -48,4 +48,4 @@ function countEach(string) {
     }
 }
 
-countEach("XOxoxss");
+countEach("XOXOXO");

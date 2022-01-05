@@ -20,4 +20,4 @@ function makeItSpongeBob(strings) {
     }
     console.log(sentence);
 }
-makeItSpongeBob("Javascript");
+makeItSpongeBob("Javascript is easy");

@@ -14,13 +14,8 @@ function chekPal(string) {
         }
     }
     if (checkLetters === split.length) {
-        console.log("palindrome !");
-    } else { console.log("Nope") }
+        return "palindrome !";
+    } else { return "Nope" }
 }
-chekPal("racecaar");
 
-
-
-/*
-       
-*/
+console.log(chekPal("racecar"));
