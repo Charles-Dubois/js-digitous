@@ -16,22 +16,24 @@ function calculate(number1, operator, number2) {
 
         // calculs
 
+        number1 = parseInt(number1);
+        number2 = parseInt(number2);
 
         if (operator === "+") {
-            return console.log(number1 + number2)
+            return console.log(number1 + number2);
         } else if (operator === "-") {
-            return console.log(number1 - number2)
+            return console.log(number1 - number2);
         } else if (operator === "x" || "*") {
-            return console.log(number1 * number2)
+            return console.log(number1 * number2);
         } else if (operator === "/") {
-            return console.log(number1 / number2)
+            return console.log(number1 / number2);
         } else if (operator === "%") {
-            return console.log(number1 % number2)
+            return console.log(number1 % number2);
         }
     }
     // message d'erreur du guard
     else {
-        return console.log("error")
+        return console.log("error");
     }
 }
-calculate(process.argv[2], process.argv[3], process.argv[4])
+calculate(process.argv[2], process.argv[3], process.argv[4]);

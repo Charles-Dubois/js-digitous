@@ -9,24 +9,21 @@
 */
 
 function multiply(tableOfMultiplication) {
-    //Guard
-    // if (tableOfMultiplication === Number) {
-    //corps de la fonction
-    let resultOfTable = 0;
-    for (i = 1; i <= 10; i++) {
-        resultOfTable = tableOfMultiplication * i;
-        console.log(resultOfTable);
+    //  Guard
+    if (process.argv[2] !== undefined || null) {
+        //corps de la fonction
+        let resultOfTable = 0;
+        for (i = 1; i <= 10; i++) {
+            resultOfTable = tableOfMultiplication * i;
+            console.log(resultOfTable);
+        }
     }
-
-    // }
     //message d'erreur du guard
-    // else { return console.log("Erreur, entrez un nombre entier !") }
+    else {
+        return console.log("Erreur, entrez un nombre entier !");
+    }
 }
+multiply(process.argv[2]);
 
-multiply(5)
 
-
-// for (i = 0; i <= 10; i++) {
-//     resultOfTable = 5 * 10;
-//     return console.log(resultOfTable);
-// }
+module.exports = { multiply };
