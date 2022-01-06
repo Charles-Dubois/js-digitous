@@ -10,8 +10,7 @@ function calculateAge(str) {
     const birthDay = new Date(str).getFullYear(),
         now = new Date().getFullYear();
 
-
     return now - birthDay;
 }
 
-console.log(calculateAge("1996-07-22"));
+console.log(calculateAge("1990-07-22"));
