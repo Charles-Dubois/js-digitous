@@ -9,8 +9,10 @@ function formatDate(str) {
     const date = new Date(str),
         years = date.getFullYear(),
         months = (date.getMonth() + 1).toString().padStart(2, '0'),
-        days = date.getDate();
+        days = date.getDate().toString().padStart(2, '0');
     return `${days}/${months}/${years}`
 
 }
-console.log(formatDate("1996-07-22"));
+// console.log(formatDate("1996-07-22"));
+
+module.exports = { formatDate };
