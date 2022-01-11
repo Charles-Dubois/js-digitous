@@ -34,16 +34,15 @@ function pendu() {
             return console.log("Something went wrong!", err)
         }
         console.log(res)
-        misteryWord.map(function(letter) {
-            for (let o = 0; o < array.length; o++) {
-                if (array[o] === res) {
-                    console.log("okok")
-                }
-            }
-
-        })
     })
+    misteryWord.map(function(letter) {
+        for (let o = 0; o < array.length; o++) {
+            if (array[o] === ) {
+                console.log("okok")
+            }
+        }
 
+    })
 
 }
 pendu()

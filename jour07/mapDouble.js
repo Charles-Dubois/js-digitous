@@ -46,6 +46,8 @@ const longNames = [{
     }
 ]
 const shortNames = longNames.map(function(data) {
-    return `name : ${data.firstName} ${data.lastName}`;
+    return {
+        name: `${data.firstName} ${data.lastName}`
+    };
 })
 console.log(shortNames)

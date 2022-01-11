@@ -1,4 +1,4 @@
-const cake = [{
+const cakes = [{
             name: "cake",
             flavor: "vanilla",
             status: "available"
@@ -28,10 +28,10 @@ const cake = [{
     - À l'aide des méthodes `.filter()` et `.map()`, vous donnerez le statut "sold out !" aux gâteaux au chocolat
     */
 
-const soldOut = cake.filter(function(flav) {
-    return flav.flavor === "chocolate";
-}).map(function(available) {
-    available.status = "sold out !";
-    return available;
+const soldOut = cakes.filter(function(cake) {
+    return cake.flavor === "chocolate";
+}).map(function(sold) {
+    sold.status = "sold out !";
+    return sold;
 })
 console.log(soldOut);
