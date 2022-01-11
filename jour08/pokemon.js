@@ -14,17 +14,18 @@ const axios = require("axios"),
 
 
 function catchPokemon(number) {
-    axios.get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=100").then(function(pokemon0to100) {
+    axios.get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=1118").then(function(pokemon0to100) {
             //Stockage dans ma fonction array des pokemons
             pokemon0to100.data.results.map(function(pokemon) {
                     array.push(pokemon);
                 })
                 //conditions pour entrer un index de pokemon
                 //guard
-            if (number < 1 || number > 100) {
-                return console.log("Choisissez un numbre entre 1 et 100")
+            if (number < 1 || number > 1118) {
+                return console.log("Choisissez un nombre entre 1 et 1118")
             }
-            return console.log(array[number])
+            return console.log(`index : ${number}
+name : ${array[number].name}`)
 
 
 
@@ -36,4 +37,4 @@ function catchPokemon(number) {
         })
 }
 
-catchPokemon(1)
+catchPokemon(1112)
