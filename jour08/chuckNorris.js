@@ -15,4 +15,4 @@ function getFact() {
     })
 }
 
-getFact()
+getFact();
